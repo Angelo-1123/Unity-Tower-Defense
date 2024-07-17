@@ -91,6 +91,7 @@ MonoBehaviour:
   impactLight: {fileID: 428021847773015332}
   damageOverTime: 120
   slowAmount: 0.8
+  explosionRadius: 0.5
   enemyTag: Enemy
   firePoint: {fileID: 7726393386973202844}
 --- !u!120 &2841162146815150122

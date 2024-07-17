@@ -23,6 +23,8 @@ public class IceTowerLvl1 : MonoBehaviour
     public int damageOverTime = 10;
     public float slowAmount = 0.3f;
 
+    public float explosionRadius = 50.0f;
+
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
     public Transform firePoint;
@@ -97,7 +99,18 @@ public class IceTowerLvl1 : MonoBehaviour
     void Laser()
     {   
         targetEnemy.TakeDamage(damageOverTime * Time.deltaTime, true);
-        targetEnemy.Slow(slowAmount);
+        //targetEnemy.Slow(slowAmount);
+
+        Collider[] colliders = Physics.OverlapSphere(target.position, explosionRadius);
+        foreach (Collider collider in colliders)
+        {
+            if(collider.tag == "Enemy")
+            {
+                Enemy e = collider.GetComponent<Enemy>();
+                e.Slow(slowAmount);
+            }
+        }
+
 
         if(!lineRenderer.enabled)
         {
