@@ -10075,7 +10075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 20
+  range: 15
   fireRate: 1
   arrowPrefab: {fileID: 0}
   useLaser: 1
@@ -10083,9 +10083,9 @@ MonoBehaviour:
   circleRenderer: {fileID: 0}
   impactEffect: {fileID: 6157122061961180330}
   impactLight: {fileID: 8796295440163214257}
-  damageOverTime: 40
-  slowAmount: 0.6
-  explosionRadius: 0.5
+  damageOverTime: 80
+  slowAmount: 0.7
+  explosionRadius: 1
   enemyTag: Enemy
   firePoint: {fileID: 1117088491286496785}
 --- !u!120 &6103734554511332391

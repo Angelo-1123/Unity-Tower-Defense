@@ -22,9 +22,9 @@ public class Enemy : MonoBehaviour
 
     public int enemyDamage = 1;
 
-    public int baseProwl = 0;
-    public int startProwl = 0;
-    public int prowl = 0;
+    public float baseProwl = 0;
+    public float startProwl = 0;
+    public float prowl = 0;
     public bool Prowling = false;
     public bool Shortcut = false;
     public bool TakeShortcut = false;
@@ -60,21 +60,38 @@ public class Enemy : MonoBehaviour
                 return;
             }
 
-            prowl--;
-
             if(Prowling)
             {
                 startSpeed = prowlingSpeed; 
                 Prowling = false;
+                if(armor*2 < amount)
+                {
+                    prowl -= (amount - (armor*2));
+                }
+
+            }else
+            {
+                if(armor < amount)
+                {
+                    prowl -= (amount - armor);
+                }
+
             }
 
-            if(prowl == 0)
+
+            if(prowl <= 0)
             {
                 healthBar.color = Color.green;
                 if(Shortcut == true)
                 {
                     TakeShortcut = true;
                 }
+            }
+
+            if(prowl < 0)
+            {
+                health += prowl;
+                healthBar.fillAmount = health / startHealth;
             }
             
             return;
@@ -87,15 +104,18 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            health -= (amount - armor);
-            healthBar.fillAmount = health / startHealth;
+            if(armor < amount)
+            {
+                health -= (amount - armor);
+                healthBar.fillAmount = health / startHealth;
+            }
             if(Crumbling == true && armor > 0)
             {
-                armor--;
+                armor-= (amount/10);
             }
             if(Crumbling == true && armor <= 0)
             {
-                armor = -5;
+                armor = -10;
                 startSpeed = crumbledSpeed;
                 healthBar.color = Color.red;
             }

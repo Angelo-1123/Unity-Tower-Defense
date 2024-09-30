@@ -175,15 +175,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da4715c88085d847b1b2a41f957b4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 10
-  speed: 10
+  startSpeed: 15
+  speed: 15
   prowlingSpeed: 0
-  baseHealth: 2000
-  startHealth: 2000
-  health: 2000
-  baseArmor: 30
-  startArmor: 30
-  armor: 30
+  baseHealth: 1500
+  startHealth: 1500
+  health: 1500
+  baseArmor: 40
+  startArmor: 40
+  armor: 40
   baseWorth: 4
   worth: 4
   deathEffect: {fileID: 7020841766415830793, guid: 99e4498d673b5684bbb22254daa0cb0f, type: 3}

@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 30
-  fireRate: 2
+  range: 20
+  fireRate: 4
   enemyTag: Enemy
   arrowPrefab: {fileID: 6076420286824243927, guid: 7c97b4266b81674449d899ce51325e0f, type: 3}
   firePoint: {fileID: 2974178549160207215}

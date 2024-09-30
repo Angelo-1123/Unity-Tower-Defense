@@ -304,9 +304,9 @@ MonoBehaviour:
   baseHealth: 5700
   startHealth: 5700
   health: 5700
-  baseArmor: 35
-  startArmor: 35
-  armor: 35
+  baseArmor: 60
+  startArmor: 60
+  armor: 60
   baseWorth: 75
   worth: 75
   deathEffect: {fileID: 7020841766415830793, guid: 99e4498d673b5684bbb22254daa0cb0f, type: 3}

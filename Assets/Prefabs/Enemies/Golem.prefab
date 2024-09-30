@@ -102,12 +102,12 @@ MonoBehaviour:
   startSpeed: 10
   speed: 10
   prowlingSpeed: 0
-  baseHealth: 4000
-  startHealth: 4000
-  health: 4000
-  baseArmor: 40
-  startArmor: 40
-  armor: 40
+  baseHealth: 2500
+  startHealth: 2500
+  health: 2500
+  baseArmor: 600
+  startArmor: 600
+  armor: 600
   baseWorth: 10
   worth: 10
   deathEffect: {fileID: 7020841766415830793, guid: 99e4498d673b5684bbb22254daa0cb0f, type: 3}

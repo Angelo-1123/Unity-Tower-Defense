@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657993, g: 0.4964143, b: 0.5748183, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -649,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f4c84e44355a445b5018ea806034b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: MainLevel
+  levelToLoad: ImprovedLevel
 --- !u!4 &227818329
 Transform:
   m_ObjectHideFlags: 0
@@ -1650,7 +1649,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.5941171, g: 0.73825204, b: 0.745283, a: 0}
+  m_BackGroundColor: {r: 0.14297792, g: 0.1981132, b: 0.1539539, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

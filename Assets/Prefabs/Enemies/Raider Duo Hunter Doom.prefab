@@ -120,24 +120,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da4715c88085d847b1b2a41f957b4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 25
-  speed: 25
+  startSpeed: 30
+  speed: 30
   prowlingSpeed: 15
   baseHealth: 800
   startHealth: 800
   health: 800
-  baseArmor: 20
-  startArmor: 20
-  armor: 20
+  baseArmor: 25
+  startArmor: 25
+  armor: 25
   baseWorth: 2
   worth: 2
   deathEffect: {fileID: 7020841766415830793, guid: 99e4498d673b5684bbb22254daa0cb0f, type: 3}
   healthBar: {fileID: 6526488780528147756}
   newGamePlus: 0
   enemyDamage: 3
-  baseProwl: 2
-  startProwl: 2
-  prowl: 2
+  baseProwl: 40
+  startProwl: 40
+  prowl: 40
   Prowling: 1
   Shortcut: 0
   TakeShortcut: 0

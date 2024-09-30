@@ -25,6 +25,7 @@ public class BuildManager : MonoBehaviour
     public TowerBlueprint towerToBuild;
     public Node selectedNode;
     public NodeUI nodeUI;
+    public TowerStats towerStats;
 
     public bool CanBuild;
 
@@ -46,6 +47,7 @@ public class BuildManager : MonoBehaviour
         towerToBuild = null;
 
         nodeUI.SetTarget(node);
+        towerStats.SetTarget(node);
     }
 
     public void DeselectNode()
@@ -53,6 +55,7 @@ public class BuildManager : MonoBehaviour
         selectedNode = null;
         CanBuild = false;
         nodeUI.Hide();
+        towerStats.Hide();
     }
 
     public void SelectTowerToBuild (TowerBlueprint tower)

@@ -18,22 +18,22 @@ public class CameraController : MonoBehaviour
             return;
         }
 
-        if(Input.GetKey("w") == true || Input.mousePosition.y >= Screen.height - panBorderThickness)
+        if((Input.GetKey("w") == true || Input.mousePosition.y >= Screen.height - panBorderThickness) && transform.position.z < 90f)
         {
             transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
         }
         
-        if(Input.GetKey("a") == true || Input.mousePosition.x <= panBorderThickness)
+        if((Input.GetKey("a") == true || Input.mousePosition.x <= panBorderThickness) && transform.position.x > 10f)
         {
             transform.Translate(Vector3.left * panSpeed * Time.deltaTime, Space.World);
         }
         
-        if(Input.GetKey("s") == true || Input.mousePosition.y <= panBorderThickness)
+        if((Input.GetKey("s") == true || Input.mousePosition.y <= panBorderThickness) && transform.position.z > -10f )
         {
             transform.Translate(Vector3.back * panSpeed * Time.deltaTime, Space.World);
         }
         
-        if(Input.GetKey("d") == true || Input.mousePosition.x >= Screen.width - panBorderThickness)
+        if((Input.GetKey("d") == true || Input.mousePosition.x >= Screen.width - panBorderThickness) && transform.position.x < 70f)
         {
             transform.Translate(Vector3.right * panSpeed * Time.deltaTime, Space.World);
         }

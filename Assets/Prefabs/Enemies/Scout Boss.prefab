@@ -126,9 +126,9 @@ MonoBehaviour:
   baseHealth: 1000
   startHealth: 1000
   health: 1000
-  baseArmor: 10
-  startArmor: 10
-  armor: 10
+  baseArmor: 15
+  startArmor: 15
+  armor: 15
   baseWorth: 25
   worth: 25
   deathEffect: {fileID: 7020841766415830793, guid: 99e4498d673b5684bbb22254daa0cb0f, type: 3}
@@ -139,8 +139,12 @@ MonoBehaviour:
   startProwl: 0
   prowl: 0
   Prowling: 0
+  Shortcut: 0
+  TakeShortcut: 0
   Boss: 1
   Fly: 0
+  Crumbling: 0
+  crumbledSpeed: 0
 --- !u!114 &-8526162743828855136
 MonoBehaviour:
   m_ObjectHideFlags: 0

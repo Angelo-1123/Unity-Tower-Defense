@@ -126,18 +126,18 @@ MonoBehaviour:
   baseHealth: 590
   startHealth: 590
   health: 590
-  baseArmor: 15
-  startArmor: 15
-  armor: 15
+  baseArmor: 25
+  startArmor: 25
+  armor: 25
   baseWorth: 2
   worth: 2
   deathEffect: {fileID: 7020841766415830793, guid: 99e4498d673b5684bbb22254daa0cb0f, type: 3}
   healthBar: {fileID: 6526488780528147756}
   newGamePlus: 0
   enemyDamage: 3
-  baseProwl: 2
-  startProwl: 2
-  prowl: 2
+  baseProwl: 40
+  startProwl: 40
+  prowl: 40
   Prowling: 1
   Shortcut: 0
   TakeShortcut: 0

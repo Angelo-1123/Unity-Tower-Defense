@@ -177,21 +177,21 @@ MonoBehaviour:
   startSpeed: 15
   speed: 15
   prowlingSpeed: 30
-  baseHealth: 2300
-  startHealth: 2300
-  health: 2300
-  baseArmor: 60
-  startArmor: 60
-  armor: 60
+  baseHealth: 1800
+  startHealth: 1800
+  health: 1800
+  baseArmor: 90
+  startArmor: 90
+  armor: 90
   baseWorth: 50
   worth: 50
   deathEffect: {fileID: 7020841766415830793, guid: 99e4498d673b5684bbb22254daa0cb0f, type: 3}
   healthBar: {fileID: 2355571537629799584}
   newGamePlus: 0
   enemyDamage: 3
-  baseProwl: 50
-  startProwl: 50
-  prowl: 50
+  baseProwl: 3000
+  startProwl: 3000
+  prowl: 3000
   Prowling: 1
   Shortcut: 1
   TakeShortcut: 0

@@ -5,18 +5,28 @@ using UnityEngine;
 public class TowerBlueprint
 {
     public GameObject prefab;
+    public string name;
+    public Sprite icon;
     public float cost;
     public float range; //Same as the tower range, but for drawing before it is built, needs to have the same value.
+    public float damage;
+    public float speed;
 
     public GameObject lvl2TowerPrefab;
     public float lvl2Cost;
     public float lvl2range;
+    public float lvl2damage;
+    public float lvl2speed;
     public GameObject lvl3TowerPrefab;
     public float lvl3Cost;
     public float lvl3range;
+    public float lvl3damage;
+    public float lvl3speed;
     public GameObject lvl4TowerPrefab;
     public float lvl4Cost;
     public float lvl4range;
+    public float lvl4damage;
+    public float lvl4speed;
 
     public float sellAmount (int level)
     {
